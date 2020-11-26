@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "Convertir pesos",
+      "setup": "npm install",
+      "run": "npm run test convertir.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "Costo renta",
+      "setup": "",
+      "run": "npm run test costoRenta.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 3
+    },
+    {
+      "name": "Puede circular",
+      "setup": "",
+      "run": "npm run test puedeCircular.test.js",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 4
+    }
+  ]
+}
