@@ -5,6 +5,20 @@ export default class App {
         return pesos<2000 ? pesos/DOLAR : pesos/EURO;
     }
 
+    costoRenta(kilometros){
+        if(kilometros<50){
+            return 3;
+        }
+        else if(kilometros<100){
+            return 5;
+        }
+        else if(kilometros<200){
+            return 6;
+        }
+        else{
+            return 6.5;
+        }
+    }
 }
 
 let app = new App();
