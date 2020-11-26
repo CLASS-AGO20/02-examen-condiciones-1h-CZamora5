@@ -7,16 +7,16 @@ export default class App {
 
     costoRenta(kilometros){
         if(kilometros<50){
-            return 3;
+            return 3*kilometros;
         }
         else if(kilometros<100){
-            return 5;
+            return 5*kilometros;
         }
         else if(kilometros<200){
-            return 6;
+            return 6*kilometros;
         }
         else{
-            return 6.5;
+            return 6.5*kilometros;
         }
     }
 }
@@ -31,3 +31,14 @@ console.log(`${pesos1} pesos equivale a ${app.convertir(pesos1)}`);
 console.log(`${pesos1+1} pesos equivale a ${app.convertir(pesos1+1)}`);
 console.log(`${pesos2} pesos equivale a ${app.convertir(pesos2)}`);
 console.log(`${pesos2/2} pesos equivale a ${app.convertir(pesos2/2)}`);
+
+//Pruebas del método costoRenta
+let kilometros1 = 34;
+let kilometros2 = 67;
+console.log(`Probando método costoRenta(kilometros):`);
+console.log(`Si conduciste por ${0*kilometros1} kilometros el costo de renta será ${app.costoRenta(0*kilometros1)}`);
+console.log(`Si conduciste por ${kilometros1} kilometros el costo de renta será ${app.costoRenta(kilometros1)}`);
+console.log(`Si conduciste por ${kilometros2} kilometros el costo de renta será ${app.costoRenta(kilometros2)}`);
+console.log(`Si conduciste por ${2*kilometros2} kilometros el costo de renta será ${app.costoRenta(2*kilometros2)}`);
+console.log(`Si conduciste por ${3*kilometros1} kilometros el costo de renta será ${app.costoRenta(3*kilometros1)}`);
+console.log(`Si conduciste por ${5*kilometros2} kilometros el costo de renta será ${app.costoRenta(5*kilometros2)}`);
